@@ -3,6 +3,11 @@
     width: 100%;
     background-color: #282828;
     padding: 2px 0;
+
+    @media screen and (min-width: 992px) {
+        padding: 1em 0;
+        font-weight: 600;
+    }
 }
 
 .menu {
@@ -18,5 +23,14 @@
         padding: 0.5em;
         text-decoration: none;
         color: #fff;
+        cursor: pointer;
+
+        @media screen and (min-width: 992px) {
+            padding: 0.5em 1.5em;
+        }
+    }
+
+    a:hover {
+        background-color: #383838;
     }
 }

@@ -1,5 +1,9 @@
 .container {
     padding-top: $header_height;
+
+    @media screen and (min-width: 992px) {
+        padding-top: 9em;
+    }
 }
 
 .blocks {
@@ -21,6 +25,17 @@
     text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
     box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
     border-radius: 8px;
+    cursor: pointer;
+
+    @media screen and (min-width: 992px) {
+        font-size: 1.5em;
+        padding: 1em 2.35em 1em 2.35em;
+        width: auto;
+    }
+}
+
+.button:hover {
+    background-color: #43bff0;
 }
 
 .second-block {
