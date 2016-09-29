@@ -4,13 +4,17 @@
 
 .blocks {
     width: 100%;
-    padding: 0 15px;
+
+    > div {
+        padding: 0 15px 40px 15px;
+    }
 }
 
 .button {
     width: 100%;
     padding: 1em 0;
     text-decoration: none;
+    font-size: 1.2em;
     color: #fff;
     font-weight: 700;
     background-color: #43B3E0;

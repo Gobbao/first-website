@@ -14,24 +14,22 @@
     }
 
     .description {
-        padding-top:  10px;
-        padding-bottom: 20px;
-        * {
+        padding: 30px 0;
+
+        p {
             padding-top: 20px;
         }
 
         .hello {
+            width: 100%;
+            color: #3e3e3e;
             font-size: 2.25em;
             line-height: 1.25em;
-
-            strong {
-                font-weight: 700;
-            }
         }
 
         .miniport {
+            line-height: 1.75;
             strong {
-                color: #3e3e3e;
                 font-weight: 600;
             }
 
