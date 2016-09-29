@@ -1,0 +1,28 @@
+.container {
+    padding-top: $header_height;
+}
+
+.blocks {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.button {
+    width: 100%;
+    padding: 1em 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    background-color: #43B3E0;
+    text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+}
+
+.second-block {
+    height: 1222px;
+}
+
+.third-block {
+    height: 2461px;
+}

@@ -1,0 +1,9 @@
+@mixin circular-image($image) {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: url($image);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}

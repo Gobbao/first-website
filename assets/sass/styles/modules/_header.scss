@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #282828;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    display: flex;
+
+    a {
+        justify-content: center;
+        padding: 0.5em;
+        text-decoration: none;
+        color: #fff;
+    }
+}
