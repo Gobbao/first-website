@@ -1,1 +1,23 @@
 $header-height: 66px;
+
+// Colors
+$color-black--base: #282828;
+
+$color-blue--base: #43B3E0;
+$color-blue--light: #43bff0;
+$color-blue--link: #43bff0;
+
+$color-grey--base: #888;
+$color-grey--dark: #3e3e3e;
+$color-grey--light: #f4f4f4;
+
+$color-pink--base: #EA8A95;
+
+
+// Sizes
+$screen-sizes: (
+    xs: 480px,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px
+);

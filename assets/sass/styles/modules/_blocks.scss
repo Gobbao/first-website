@@ -1,47 +1,163 @@
+.menu {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        display: flex;
+
+        .item__link {
+            color: #fff;
+            cursor: pointer;
+            justify-content: center;
+            padding: 0.5em;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #383838;
+            }
+
+            @include media-q {
+                padding: 0.5em 1.5em;
+            }
+        }
+    }
+}
+
 .container {
     padding-top: $header_height;
 
-    @media screen and (min-width: 992px) {
+    @include media-q {
         padding-top: 9em;
     }
 }
 
 .blocks {
     width: 100%;
+}
 
-    > div {
-        padding: 0 15px 40px 15px;
+.start-block {
+    background: url('/images/bg.png');
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    padding: 3em 15px;
+    text-shadow: 1px 1px 0px #fff;
+
+    &--light {
+        background-color: $color-grey--light;
+    }
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        color: $color-grey--dark;
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-bottom: 0.4em;
+
+        @include media-q {
+            font-size: 2em;
+            margin-bottom: 0.75em;
+        }
+    }
+
+    &__text {
+        font-size: 1.28em;
+        margin-bottom: 2em;
+
+        @include media-q {
+            margin-bottom: 0;
+        }
+    }
+
+    @include media-q {
+        margin-bottom: 4em;
     }
 }
 
 .button {
-    width: 100%;
+    background: url('/images/bg.png');
+    background-color: $color-blue--base;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
     padding: 1em 0;
     text-decoration: none;
-    font-size: 1.2em;
-    color: #fff;
-    font-weight: 700;
-    background-color: #43B3E0;
     text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-    border-radius: 8px;
-    cursor: pointer;
+    width: 100%;
 
-    @media screen and (min-width: 992px) {
+    &:hover {
+        background-color: $color-blue--light;
+    }
+
+    @include media-q {
         font-size: 1.5em;
         padding: 1em 2.35em 1em 2.35em;
         width: auto;
     }
 }
 
-.button:hover {
-    background-color: #43bff0;
-}
+.block {
+    &__content {
+        background-color: #fff;
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+        line-height: 1.25;
+        margin-bottom: 20px;
+        padding: 30px 20px;
+        text-align: center;
 
-.second-block {
-    height: 1222px;
-}
+        &__icon {
+            color: $color-pink--base;
+            display: block;
+            font-size: 6em;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
 
-.third-block {
-    height: 2461px;
+        &__link {
+            left: -20px;
+            position: relative;
+            top: -30px;
+
+            .image {
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 100%;
+            }
+        }
+
+        &__title {
+            color: #3e3e3e;
+            font-size: 1.25em;
+            font-weight: 700;
+            margin-bottom: 0.25em;
+
+            @include media-q {
+                font-size: 1.5em;
+                margin-bottom: 0.5em;
+            }
+        }
+
+        &__text {
+            line-height: 1.75em;
+        }
+
+        @include media-q {
+            margin-bottom: 0;
+            padding: 3em 2em 3.5em 2em;
+        }
+    }
+
+    @include media-q {
+        padding: 25px 0 0 25px;
+        width: 33%;
+    }
 }

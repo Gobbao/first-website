@@ -7,3 +7,9 @@
     background-repeat: no-repeat;
     border-radius: 50%;
 }
+
+@mixin media-q($screen: md, $type: min) {
+    @media screen and (#{$type}-width: map-get($screen-sizes, $screen)) {
+        @content;
+    }
+}
