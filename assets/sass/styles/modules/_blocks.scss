@@ -41,6 +41,12 @@
     padding: 3em 15px;
     text-shadow: 1px 1px 0px #fff;
 
+    &--dark {
+        background-color: $color-grey--dark;
+        color: $color-grey--footer;
+        text-shadow: -1px -1px 0px $color-black--base;
+    }
+
     &--light {
         background-color: $color-grey--light;
     }
@@ -57,6 +63,10 @@
         font-size: 1.2em;
         font-weight: 700;
         margin-bottom: 0.4em;
+
+        &--dark {
+            color: white;
+        }
 
         @include media-q {
             font-size: 2em;
@@ -95,36 +105,12 @@
     }
 }
 
-.button {
-    background: url('/images/bg.png');
-    background-color: $color-blue--base;
-    border-radius: 8px;
-    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.2em;
-    font-weight: 700;
-    padding: 1em 0;
-    text-decoration: none;
-    text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
-    width: 100%;
-
-    &:hover {
-        background-color: $color-blue--light;
-    }
-
-    @include media-q {
-        font-size: 1.5em;
-        padding: 1em 2.35em 1em 2.35em;
-        width: auto;
-    }
-}
-
 .blocks-container {
     @include media-q {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
@@ -189,6 +175,6 @@
 
     @include media-q {
         padding: 25px 0 0 25px;
-        width: 33%;
+        width: 30%;
     }
 }

@@ -1,3 +1,21 @@
 .footer {
-    height: 1067px;
+    @extend .start-block;
+    @extend .start-block--dark;
+
+    &__social {
+        &__title {
+            color: white;
+            font-size: 1.25em;
+            font-weight: 700;
+            margin-bottom: 0.4em;
+        }
+
+        &__icons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 1em;
+        }
+    }
 }

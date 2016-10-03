@@ -10,6 +10,12 @@
 // Reset
 @import "base/base";
 
+// Components
+@import "styles/components/button";
+@import "styles/components/icon";
+@import "styles/components/input";
+@import "styles/components/separator";
+
 // Modules
 @import "styles/modules/header";
 @import "styles/modules/blocks";

@@ -1,0 +1,42 @@
+.icon {
+    align-items: center;
+    background: url('/images/bg.png');
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+    color: $color-black--light;
+    display: flex;
+    font-size: 2em;
+    height: 48px;
+    justify-content: center;
+    margin: 0.25em;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+    width: 48px;
+
+    &--twitter {
+        background-color: $color-twitter;
+    }
+
+    &--facebook {
+        background-color: $color-facebook;
+    }
+
+    &--dribbble {
+        background-color: $color-dribbble;
+    }
+
+    &--linkedin {
+        background-color: $color-linkedin;
+    }
+
+    &--tumblr {
+        background-color: $color-tumblr;
+    }
+
+    &--google-plus {
+        background-color: $color-google-plus;
+    }
+
+    &--github {
+        background-color: $color-github;
+    }
+}
