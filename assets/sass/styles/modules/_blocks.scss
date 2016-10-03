@@ -78,6 +78,23 @@
     }
 }
 
+.footer-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5em;
+
+    &__text {
+        font-size: 1.25em;
+        margin-bottom: 2em;
+    }
+
+    @include media-q {
+        margin-top: 3em;
+    }
+}
+
 .button {
     background: url('/images/bg.png');
     background-color: $color-blue--base;
@@ -103,13 +120,21 @@
     }
 }
 
+.blocks-container {
+    @include media-q {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 .block {
     &__content {
         background-color: #fff;
         box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
         line-height: 1.25;
         margin-bottom: 20px;
-        padding: 30px 20px;
+        padding-bottom: 30px;
         text-align: center;
 
         &__icon {
@@ -120,12 +145,12 @@
             font-weight: normal;
             line-height: 1;
             margin-bottom: 20px;
+            padding-top: 30px;
         }
 
         &__link {
-            left: -20px;
             position: relative;
-            top: -30px;
+            width: auto;
 
             .image {
                 background-size: 100%;
@@ -139,20 +164,26 @@
             font-size: 1.25em;
             font-weight: 700;
             margin-bottom: 0.25em;
+            padding: 10px 20px 0 20px;
 
             @include media-q {
                 font-size: 1.5em;
                 margin-bottom: 0.5em;
+                padding: 0 2em;
             }
         }
 
         &__text {
             line-height: 1.75em;
+            padding: 0 20px;
+
+            @include media-q {
+                padding: 0 2em;
+            }
         }
 
         @include media-q {
             margin-bottom: 0;
-            padding: 3em 2em 3.5em 2em;
         }
     }
 
