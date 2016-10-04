@@ -1,0 +1,9 @@
+
+
+.three-dots {
+    &:after {
+        content: "...";
+        color: white;
+        display: inline-block;
+    }
+}

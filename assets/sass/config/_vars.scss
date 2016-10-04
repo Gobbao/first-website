@@ -16,18 +16,12 @@ $color-grey--light: #f4f4f4;
 
 $color-pink--base: #EA8A95;
 
-$color-twitter: #2DAAE4;
-$color-facebook: #3C5A98;
-$color-dribbble: #C4376B;
-$color-linkedin: #006599;
-$color-tumblr: #51718A;
-$color-google-plus: #DA2713;
-$color-github: #FAFAFA;
-
 // Sizes
 $screen-sizes: (
     xs: 480px,
+    ms: 560px,
     sm: 768px,
     md: 992px,
-    lg: 1200px
+    lg: 1200px,
+    xlg: 1300px
 );

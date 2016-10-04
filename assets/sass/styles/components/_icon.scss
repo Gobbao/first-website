@@ -1,3 +1,34 @@
+$icons: (
+    'twitter': (
+        color: #2DAAE4,
+        unicode: "\f099"
+    ),
+    'facebook': (
+        color: #3C5A98,
+        unicode: "\f09a"
+    ),
+    'dribbble': (
+        color: #C4376B,
+        unicode: "\f17d"
+    ),
+    'linkedin': (
+        color: #006599,
+        unicode: "\f0e1"
+    ),
+    'tumblr': (
+        color: #51718A,
+        unicode: "\f173"
+    ),
+    'google-plus': (
+        color: #DA2713,
+        unicode: "\f0d5"
+    ),
+    'github': (
+        color: #FAFAFA,
+        unicode: "\f09b"
+    )
+);
+
 .icon {
     align-items: center;
     background: url('/images/bg.png');
@@ -9,34 +40,29 @@
     height: 48px;
     justify-content: center;
     margin: 0.25em;
+    text-decoration: none;
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+    transition: margin 0.2s ease-out;
     width: 48px;
 
-    &--twitter {
-        background-color: $color-twitter;
+    @each $key, $icon in $icons {
+        &--#{$key} {
+            @include icon-hover(map-get($icon, color));
+
+            &:before {
+                content: map-get($icon, unicode);
+                display: block;
+                font-family: "FontAwesome";
+                font-size: 1.5rem;
+            }
+        }
     }
 
-    &--facebook {
-        background-color: $color-facebook;
+    &:hover {
+        margin-top: -5px;
     }
 
-    &--dribbble {
-        background-color: $color-dribbble;
-    }
-
-    &--linkedin {
-        background-color: $color-linkedin;
-    }
-
-    &--tumblr {
-        background-color: $color-tumblr;
-    }
-
-    &--google-plus {
-        background-color: $color-google-plus;
-    }
-
-    &--github {
-        background-color: $color-github;
+    @include media-q {
+        background-color: $color-black--button;
     }
 }

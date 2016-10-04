@@ -13,3 +13,11 @@
         @content;
     }
 }
+
+@mixin icon-hover($color: inherit) {
+    background-color: $color;
+
+    &:hover {
+        background-color: $color;
+    }
+}

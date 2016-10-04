@@ -12,4 +12,15 @@
     &--textarea {
         height: 12em;
     }
+
+    &--group {
+        @include media-q {
+            margin-left: 20px;
+        }
+    }
+
+    @include media-q {
+        font-size: 17px;
+        padding: 1em;
+    }
 }

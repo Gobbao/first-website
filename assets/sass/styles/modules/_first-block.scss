@@ -81,5 +81,11 @@
     // first-block
     @include media-q {
         flex-direction: row;
+        padding: 0 5em 40px 5em;
+    }
+
+    @include media-q(xlg) {
+        flex-direction: row;
+        padding: 0 20em 40px 20em;
     }
 }
